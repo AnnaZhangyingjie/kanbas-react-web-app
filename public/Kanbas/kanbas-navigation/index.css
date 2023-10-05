@@ -60,3 +60,14 @@ font-family: Arial, Helvetica, sans-serif;
     color:red;
 }
 
+.small-navigation li a{
+    color:red;
+    text-decoration: none;
+
+}
+
+.small-navigation ul{
+    list-style: none;;
+
+}
+

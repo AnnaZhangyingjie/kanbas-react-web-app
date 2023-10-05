@@ -16,7 +16,7 @@
 
 <body>
     <div class="wd-flex-row-container">
-        <div class="wd-bg-color-black">
+        <div class="wd-bg-color-black d-none d-sm-block">
             <ul class="wd-kanbas-navigation">
 
                 <li><i class="fa-brands fa-neos fa-2xl" style="color: #ff0000;"></i></li>
@@ -59,7 +59,7 @@
         </div>
 
 
-        <div class="wd-bg-color-white">
+        <div class="wd-bg-color-white d-none d-sm-block">
             <ul class="wd-course-navigation">
                 <li class="wd-active"><a href="/kanbas/home.html">Home</a></li>
                 <li><a href="#">Modules</a></li>
@@ -84,6 +84,15 @@
         </div>
 
         <div class="flex-grow-1">
+
+            <div class="d-sm-none bg-black text-white p-2 d-flex justify-content-between">
+                <button type="button" class="btn btn-black me-2"><a href="/kanbas/kanbas-navigation/small-navigation.html" class="white-anchor">
+                    <i class="fa-solid fa-burger" style="color: #ffffff;"></i></a></button>
+                <button type="button" class="btn btn-black"><a href="/kanbas/courses/course-navigation/small-course-navi.html" class="white-anchor">
+                    <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i></a></button>
+            </div>
+
+
             <nav style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb">
                 <ol class="breadcrumb" style="color: #ff0000; margin-bottom: 30px;">
                     <li class="breadcrumb-item">CS5610.11550.202410</li>
@@ -297,7 +306,7 @@
 
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 d-none d-md-block">
                         <span>Course Status</span><hr>
                         <div row>
                             <button type="button" class="btn btn-secondary" style="margin-bottom: 5px; color:black">Unpublish</button>
