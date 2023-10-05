@@ -1,0 +1,21 @@
+.wd-kanbas-dashboard {
+    margin-left: 10px;
+}
+
+.wd-kanbas-dashboard h2{
+    color:gray;
+}
+
+.wd-kanbas-dashboard-indentation {
+    margin-left: 20px;
+}
+
+.custom-card-size .card {
+    width: 270px;
+    
+}
+
+.solid-color-bg {
+    background-color: blue;
+    height: 180px;
+}

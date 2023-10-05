@@ -1,5 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/946a73db2f.js" crossorigin="anonymous"></script>
+    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/kanbas/kanbas-navigation/index.css" rel="stylesheet" />
+    <link href="/labs/a2/index.css" rel="stylesheet" />
+    <link href="/kanbas/courses/course-navigation/index.css" rel="stylesheet" />
+    <link href="/kanbas/profile/index.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
+
+                <li><i class="fa-brands fa-neos fa-2xl" style="color: #ff0000;"></i></li>
+                <li><i class="fa-regular fa-circle-user" style="color: #6e6e6e;"></i>
+                    <a href="/kanbas/profile/index.html">Account</a>
+                </li>
+
+                <li><i class="fa-solid fa-gauge" style="color: #ff0000;"></i>
+                    <a href="/kanbas/dashboard/index.html">Dashboard</a>
+                </li>
+
+                <li class="wd-active"><i class="fa-solid fa-book" style="color: #ff0000;"></i>
+                    <a href="/kanbas/home.html">Courses</a>
+                </li>
+
+                <li><i class="fa-solid fa-calendar-days" style="color: #ff0000;"></i>
+                    <a href="#">Calendar</a>
+                </li>
+
+                <li><i class="fa-solid fa-inbox" style="color: #ff0000;"></i>
+                    <a href="#">Inbox</a>
+                </li>
+
+                <li><i class="fa-solid fa-clock-rotate-left" style="color: #ff0000;"></i>
+                    <a href="#">History</a>
+                </li>
+
+                <li><i class="fa-solid fa-network-wired" style="color: #ff0000;"></i>
+                    <a href="#">Studio</a>
+                </li>
+
+                <li><i class="fa-solid fa-layer-group" style="color: #ff0000;"></i>
+                    <a href="#">Commons</a>
+                </li>
+
+                <li><i class="fa-solid fa-circle-question" style="color: #ff0000;"></i>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="wd-bg-color-white">
+            <ul class="wd-course-navigation">
+                <li ><a href="/kanbas/home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li class="wd-active"><a href="/kanbas/grades.html">Grades</a></li>
+                <li><a href="#">people</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="/kanbas/settings/course_details.html">Settings</a></li>
+
+            </ul>
+        </div>
+
+        <div class="flex-grow-1">
+            <nav style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb">
+                <ol class="breadcrumb" style="color: #ff0000; margin-bottom: 30px;">
+                    <li class="breadcrumb-item">CS5610.11550.202410</li>
+                    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                </ol>
+            </nav>
+        
+            
+
+       
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 d-flex justify-content-end" style="margin-bottom: 20px;">
+
+                        <button type="button" class="btn btn-secondary me-1" style="color:black"><i class="fa-solid fa-file-import me-1"></i>Import</button>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle me-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-file-export me-1" style="color:black"></i>Export
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Other 1</a>
+                                <a class="dropdown-item" href="#">Other 2</a>
+                                <a class="dropdown-item" href="#">Other 3</a>
+                            </div>
+                        </div>
+                
+                        <button type="button" class="btn btn-secondary me-1" style="color:black"><i class="fa-solid fa-gear"></i></button>
+                    </div>
+    
+                </div>
+
+                <div class="col-sm-10">
+
+                    <div class="row d-flex justify-content-between" style="margin-bottom: 20px;">
+                        <div class="col">
+                            <label for="inputpoints" class="col-form-label text-end">Student Names</label>
+                            <input type="text" class="form-control" id="assign-to" value="Search Students">
+                        </div>
+                        
+                        <div class="col">
+                            <label for="inputpoints" class="col-form-label text-end">Assignment Names</label>
+                            <input type="text" class="form-control" id="assign-to" value="Search Assignments">
+                        </div>
+                        
+                    </div>
+
+                    <div>
+                        <button type="button" class="btn btn-light me-1 margin-bottom" style="color:black "><i class="fa-solid fa-filter me-1"></i>Apply Filters</button>
+                    </div>
+
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>A1 SETUP Out of 100</th>
+                                <th>A2 HTML Out of 100</th>
+                                <th>A3 CSS Out of 100</th>
+                                <th>A4 BOOTSTRAP Out of 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Princes Leia</td>
+                                <td>98</td>
+                                <td>80</td>
+                                <td><input type="number" min="1" max="100" id="student-grade" />
+                                    <button type="button" class="btn btn-light me-1 margin-bottom" style="color:black ">
+                                        <i class="fa-solid fa-right-from-bracket"></i</button></td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>Alice Wonderland</td>
+                                <td>98</td>
+                                <td>89</td>
+                                <td>87</td>
+                                <td><input type="number" min="1" max="100" id="student-grade" /><button type="button" class="btn btn-light me-1 margin-bottom" style="color:black ">
+                                    <i class="fa-solid fa-right-from-bracket"></i</button></td>
+                            </tr>
+                            <tr>
+                                <td>Luke Skywalker</td>
+                                <td><input type="number" min="1" max="100" id="student-grade" /><button type="button" class="btn btn-light me-1 margin-bottom" style="color:black ">
+                                    <i class="fa-solid fa-right-from-bracket"></i</button></td>
+                                <td>88</td>
+                                <td>97</td>
+                                <td>82</td>
+                            </tr>
+                            <tr>
+                                <td>Han Solo</td>
+                                <td>83</td>
+                                <td><input type="number" min="1" max="100" id="student-grade" /><button type="button" class="btn btn-light me-1 margin-bottom" style="color:black ">
+                                    <i class="fa-solid fa-right-from-bracket"></i</button></td>
+                                <td>94</td>
+                                <td>98</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+
+                </div>
+
+
+                    
+                </div>
+                
+            </div> 
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,4 +329,4 @@
         </td>
     </tr>
 </body>
-</html>
+</html> -->

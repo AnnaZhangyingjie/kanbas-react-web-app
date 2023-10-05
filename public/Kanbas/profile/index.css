@@ -1,0 +1,56 @@
+.wd-account-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 120px;
+    margin: 20px;
+}
+
+.wd-account-navigation li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-account-navigation li.wd-active {
+    border-left: 2px solid black;
+}
+
+.wd-account-navigation li.wd-active a{
+    color: black;
+}
+
+.wd-account-navigation a{
+    color:red;
+    text-decoration: none;
+}
+
+.wd-accout-information a {
+    color:red;
+    text-decoration: none;
+}
+
+.wd-accout-information {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+}
+
+.wd-accout-information * {
+    margin-bottom: 10px;
+}
+
+.wd-account-icon {
+    font-size: 10em;
+    line-height: normal;
+}
+
+.wd-accout-button a{
+    color:black;
+    text-decoration: none;
+}
+
+
