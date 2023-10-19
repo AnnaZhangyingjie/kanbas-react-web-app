@@ -1,0 +1,25 @@
+.wd-status-button {
+    background-color: lightgrey;
+
+    list-style: none;
+    padding: 0px;
+    width: 240px;
+    height: 40px;
+
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+
+}
+
+.wd-status-button a {
+    text-decoration: none;
+    color:black;
+    align-content: center;
+    margin-left: 20px;
+}
+
+.wd-status-button a svg {
+    margin-right: 10px;
+}
+

@@ -5,10 +5,14 @@ import Account from "./Account"
 import Dashboard from "./Dashboard";
 import Calendar from "./Calendar";
 
+
 function Kanbas() {
     return (
         <div className="d-flex">
-            <KanbasNavigation />
+
+                <KanbasNavigation />
+
+
 
             <div>
                 <Routes>
