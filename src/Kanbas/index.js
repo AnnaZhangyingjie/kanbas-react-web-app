@@ -9,10 +9,7 @@ import Calendar from "./Calendar";
 function Kanbas() {
     return (
         <div className="d-flex">
-
-                <KanbasNavigation />
-
-
+            <KanbasNavigation />
 
             <div>
                 <Routes>
