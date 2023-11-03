@@ -4,7 +4,8 @@ import db from "../../Database";
 import {BiDotsVerticalRounded} from "react-icons/bi";
 import {PiDotsSixVerticalBold} from "react-icons/pi";
 import {GiNotebook} from "react-icons/gi";
-import {AiFillCheckCircle} from "react-icons/ai";
+import {AiFillCheckCircle, AiOutlinePlus} from "react-icons/ai";
+
 
 
 function Assignments() {
@@ -24,7 +25,13 @@ function Assignments() {
                     </div>
                     <div className="d-flex">
                         <button type="button" className="btn btn-secondary me-1" >Group</button>
-                        <button type="button" className="btn btn-danger me-1">Assignment</button>
+
+                            <button type="button" className="btn btn-danger me-1">
+                                <AiOutlinePlus />
+                                Assignment</button>
+
+
+
                         <button type="button" className="btn btn-secondary me-1" ><BiDotsVerticalRounded /></button>
                     </div>
                 </div>

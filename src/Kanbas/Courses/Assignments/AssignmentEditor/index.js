@@ -3,6 +3,7 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
 import {AiFillCheckCircle} from "react-icons/ai";
 import {BiDotsVerticalRounded} from "react-icons/bi";
+import {setModule} from "../../Modules/modulesReducer";
 
 
 function AssignmentEditor() {
@@ -29,6 +30,15 @@ function AssignmentEditor() {
             <h2>Assignment Name</h2>
             <input value={assignment.title}
                    className="form-control mb-2" />
+            {/*<textarea value={assignment.description}*/}
+            {/*          onChange={(e) => setModule({*/}
+            {/*              ...assignment, description: e.target.value })}*/}
+            {/*/>*/}
+
+            {/*<label>Points</label>*/}
+            {/*<input value={assignment.points}*/}
+            {/*       className="form-control mb-2" />*/}
+            
             <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
                   className="btn btn-danger">
                 Cancel

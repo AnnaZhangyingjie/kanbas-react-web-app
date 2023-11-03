@@ -10,13 +10,13 @@ import {MdOutlineStorage} from "react-icons/md";
 import Grades from "./Grades";
 
 
-function Courses() {
+function Courses({ courses }) {
 
     const{courseId} = useParams();
     const{pathname} = useLocation();
-    const [qwe, kanbas, courses, id, screen] = pathname.split("/")
+    const [screen] = pathname.split("/")
 
-    const course = db.courses.find((course) => course._id === courseId)
+    const course = courses.find((course) => course._id === courseId)
     return (
         <div className="container">
             <div className='row'>

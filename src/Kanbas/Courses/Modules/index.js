@@ -1,6 +1,7 @@
 import ModuleList from "./ModuleList";
 import {AiFillCheckCircle} from "react-icons/ai";
 import {BsThreeDotsVertical} from "react-icons/bs";
+
 function Modules() {
     return (
         <div className='col-8' >
