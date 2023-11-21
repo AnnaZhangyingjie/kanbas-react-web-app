@@ -1,5 +1,7 @@
 import React, {  useEffect,useState } from "react";
 import axios from "axios";
+const API_LAB = process.env.REACT_APP_API_LAB;
+const LAB_URL = `${API_LAB}/a5`;
 
 function EncodingParametersInURLs() {
     const [a, setA] = useState(34);
@@ -7,24 +9,21 @@ function EncodingParametersInURLs() {
     const [welcome, setWelcome] = useState("");
     const [result, setResult] = useState(0);
 
-    const API_BASE = process.env.REACT_APP_API_BASE;
-    const LAB_URL = `${API_BASE}/modules`;
-
     const fetchSum = async (a, b) => {
         const response = await
-            axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+            axios.get(`${LAB_URL}/add/${a}/${b}`);
         setResult(response.data);
     };
 
     const fetchSubtraction = async (a, b) => {
         const response = await axios.get(
-            `http://localhost:4000/a5/subtract/${a}/${b}`);
+            `${LAB_URL}/subtract/${a}/${b}`);
         setResult(response.data);
     };
 
 
     const fetchWelcome = async () => {
-        const response = await axios.get("http://localhost:4000/a5/welcome");
+        const response = await axios.get(`${LAB_URL}/welcome`);
         setWelcome(response.data);
     };
     useEffect(() => {
@@ -62,24 +61,24 @@ function EncodingParametersInURLs() {
 
             <h3>Path Parameters</h3>
             <a
-                href={`http://localhost:4000/a5/add/${a}/${b}`}
+                href={`${LAB_URL}/add/${a}/${b}`}
                 className="btn btn-primary">
                 Add {a} + {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/subtract/${a}/${b}`}
+                href={`${LAB_URL}/subtract/${a}/${b}`}
                 className="btn btn-danger">
                 Substract {a} - {b}
             </a>
 
             <h3>Query Parameters</h3>
             <a
-                href={`http://localhost:4000/a5/calculator?operation=add&a=${a}&b=${b}`}
+                href={`${LAB_URL}/calculator?operation=add&a=${a}&b=${b}`}
                 className="btn btn-primary">
                 Add {a} + {b}
             </a>
             <a
-                href={`http://localhost:4000/a5/calculator?operation=subtract&a=${a}&b=${b}`}
+                href={`${LAB_URL}/calculator?operation=subtract&a=${a}&b=${b}`}
                 className="btn btn-danger">
                 Substract {a} - {b}
             </a>
