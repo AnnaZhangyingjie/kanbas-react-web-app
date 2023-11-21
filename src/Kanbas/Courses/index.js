@@ -1,6 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Navigate, Route, Routes, useParams, useLocation} from "react-router-dom";
-import db from "../Database"
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -8,15 +7,31 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import {MdOutlineStorage} from "react-icons/md";
 import Grades from "./Grades";
+import axios from "axios";
 
 
-function Courses({ courses }) {
+function Courses() {
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const URL =  `${API_BASE}/courses`
+    // const URL = "http://localhost:4000/api/courses";
 
     const{courseId} = useParams();
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
+
     const{pathname} = useLocation();
     const [screen] = pathname.split("/")
 
-    const course = courses.find((course) => course._id === courseId)
     return (
         <div className="container">
             <div className='row'>

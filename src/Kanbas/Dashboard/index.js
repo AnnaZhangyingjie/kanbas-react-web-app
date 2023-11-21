@@ -47,7 +47,10 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
                     </button>
 
 
-                    <button onClick={updateCourse} className="btn btn-primary">
+                    <button onClick={(event) => {
+                        event.preventDefault();
+                        updateCourse(course);
+                    }} className="btn btn-primary">
                         Update
                     </button>
 
@@ -61,7 +64,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
 
                     <div className="row d-flex justify-content-between">
                         <Link key={course._id}
-                            to={`/Kanbas/Courses/${course._id}`}
+                            to={`/Kanbas/Courses/${course._id.$oid}`}
                             className="list-group-item">
                             <div className="d-flex justify-content-between align-items-center">
                                 {course.name}
@@ -78,7 +81,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
                                         <button className="btn btn-danger"
                                                 onClick={(event) => {
                                                     event.preventDefault();
-                                                    deleteCourse(course._id);
+                                                    deleteCourse(course);
                                                 }}>
                                             Delete
                                         </button>
