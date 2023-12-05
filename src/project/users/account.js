@@ -75,6 +75,18 @@ function Account() {
                         onChange={(e) => setUser({ ...user, dob: e.target.value })}
                     />
 
+                    <select
+                        className="form-control"
+                        value={user.role}
+                        onChange={(e) => setUser({ ...user, role: e.target.value })}
+                    >
+                        <option value="USER">User</option>
+                        <option value="FACULTY">Faculty</option>
+                        <option value="STUDENT">Student</option>
+                        <option value="ADMIN">Admin</option>
+                    </select>
+
+
                     <button onClick={updateUser} className="btn btn-primary">
                         Update
                     </button>
